@@ -2,7 +2,11 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+/*
 
+NAVIGATION CSS
+
+*/
 .topnav {
   overflow: hidden;
   background-color: #000000;
@@ -66,4 +70,13 @@ body {
   object-position: 25px 10%;
 
 	
+}
+/* END OF NAVIGATION CSS */
+
+
+
+.Twitter{
+
+
+
 }
