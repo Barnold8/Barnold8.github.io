@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #00A8E8;
+  background: #000000;
   color: white;
 }
 
@@ -69,14 +69,33 @@ h1 {
   text-align: center;
   font-family: Ubuntu;
   letter-spacing: 1px;
+  
+}
+
+.TD_Text{
+
+  color: white;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
 }
 
 .BackGround {
   position: relative;
   width: 100%;
   height: 500px;
-  /*background: rgb(50, 50, 50); */
-  background-image: url(Assets/twitter.png) no-repeat 50% 50% fixed;
+  background: rgb(50, 50, 50); 
+  background: url("../Assets/B_S.jpg") no-repeat 50% 50% fixed;
   background-size: 130%;
   overflow: hidden;
 }
