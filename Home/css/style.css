@@ -1,11 +1,18 @@
 body {
-  background: #000000;
+
   background: url("../Assets/BG.png");
+
   background-repeat: no-repeat;
   background-blend-mode: screen;
+  background-color:rgba(0,0,255,0.3);
 }
 
+.Home-Padding{
 
+  padding-bottom: -900px;
+
+
+}
 
 nav {
   position: fixed;
@@ -391,7 +398,7 @@ a {
 .menu {
    margin: auto;
    position: absolute;
-   top: 0;
+   top: 400;
    bottom: 0;
    left: 0;
    right: 0;
@@ -410,6 +417,7 @@ a {
 .menu-item:hover {
    background: #EEEEEE;
    color: #3290B1;
+
 }
 
 .menu-item:nth-child(3) {
@@ -448,7 +456,8 @@ a {
 }
 
 .menu-open-button {
-   z-index: 1;
+
+   z-index: 2;
    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
    -webkit-transition-duration: 400ms;
