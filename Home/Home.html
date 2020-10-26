@@ -21,7 +21,13 @@
 
 <body>
 
-<nav role="navigation">
+
+
+<!--- retired code 
+
+      This code referenced pure CSS that had a hamburger menu that gave me problems with phone viewing
+
+  <nav role="navigation">
   <div id="menuToggle"> 
 
     <input name="toggle" type="checkbox" />
@@ -43,7 +49,7 @@
   </div>
 </nav>
 
-<!--- retired code 
+
   The corresponding code below is the navigation menu found at the top right 
   <nav>
   <div class="nav-bg"></div>
@@ -67,8 +73,26 @@
 </div>
 
 
+<!-- The clas menu allows for the middle nav menu 
 
+    Each A in this nav range is a circle
 
+-->
+<nav class="menu">
+   <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+   <label class="menu-open-button" for="menu-open">
+    <span class="lines line-1"></span>
+    <span class="lines line-2"></span>
+    <span class="lines line-3"></span>
+  </label>
+
+   <a href="#" class="menu-item blue"> Hello World  </a>
+   <a href="#" class="menu-item green"> </a>
+   <a href="#" class="menu-item red">  </a>
+   <a href="#" class="menu-item purple">  </a>
+   <a href="#" class="menu-item orange"> </a>
+   <a href="#" class="menu-item lightblue">  </a>
+</nav>
 
 
 <marquee> <h1> ADD SCROLLING IMAGES OF THE WORK DONE BY UNIQUE WALLS </h1> </marquee>
@@ -78,6 +102,13 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 
     <script src="js/index.js"></script>
+
+
+    <div class="Web_Footer">
+
+  </div>
+  <footer class="Footer"> <a> <img src="Assets/twitter3.png"/> </a></footer>
+
 
 </body>
 </html>
