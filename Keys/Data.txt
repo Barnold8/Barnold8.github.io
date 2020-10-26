@@ -1,3 +1,0 @@
-API_SECREY_DAY = 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
-
-API_PUBLIC_KEY = 4e2e5f6bc58febffae1f58582305bc4f
