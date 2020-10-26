@@ -1,10 +1,11 @@
 body {
-  margin: 0;
-  padding: 0;
-  background: #90b1b4;
-
-  color: white;
+  background: #000000;
+  background: url("../Assets/BG.png");
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
 }
+
+
 
 nav {
   position: fixed;
@@ -73,11 +74,7 @@ h1 {
   
 }
 
-p{
 
-    text-shadow:  : 2px,2px;
-
-}
 
 
 .TD_Text{
@@ -112,7 +109,7 @@ transform: scale(3.5); /* (150% zoom)*/
   position: relative;
   width: 100%;
   height: 500px;
-  background:#90b1b4;
+  /*background:#000000;*/
   /*background: url("../Assets/STOCK_DEF.jpeg") no-repeat 50% 50% fixed; */
   background-size: 130%;
   overflow: hidden;
@@ -310,14 +307,6 @@ transform: scale(3.5); /* (150% zoom)*/
 
 
 
-body {
-   padding: 0;
-   margin: 0;
-   background: #90b1b4;
-   color: #EEEEEE;
-   text-align: center;
-   font-family: "Lato", sans-serif;
-}
 
 @media screen and (max-width: 700px) {
    body {
@@ -459,7 +448,7 @@ a {
 }
 
 .menu-open-button {
-   z-index: 2;
+   z-index: 1;
    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
    -webkit-transition-duration: 400ms;
@@ -639,7 +628,8 @@ a {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #85A0A3;
+   background-image:
+
    color: white;
 
 
