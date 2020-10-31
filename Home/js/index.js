@@ -15,10 +15,38 @@
  // });
 //});
 
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  rainArray = [];
 
-var siteWidth = 1280;
-var scale = screen.width /siteWidth;
+  for (i = 0; i < 100; i++) {										//Code tested at https://editor.p5js.org/Barnold__/sketches/kKasHUrgO
 
-document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
+    rainArray.push(new Rain(random(width), random(height)));
 
+  }
+
+}
+
+function draw() {
+  clear();
+  background('rgba(0,0,0, 0.00)');
+  for (i = 0; i < rainArray.length; i++) {
+
+    rainArray[i].show();
+    rainArray[i].fall();
+
+
+  }
+
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  for (i = 0; i < rainArray.length; i++) {
+
+    rainArray[i].x = random(width);
+    rainArray[i].y = random(height);
+
+  }
+}
 
