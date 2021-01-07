@@ -1,0 +1,9 @@
+This project uses...
+
+
+JSX, HTML, CSS, JS, Tailwind CSS,  framer and React
+
+Tailwind is pre-installed, this is because I was learning how to use react with the video https://www.youtube.com/watch?v=mACw_G-okPE&t and tailwind is too much of a pain to install on a new project.
+
+
+This github project is using a copy from my learning project but with a clean slate. Meaning that the config and everything is pre done but none of the actual website is done
