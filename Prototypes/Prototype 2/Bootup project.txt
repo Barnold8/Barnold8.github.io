@@ -1,0 +1,7 @@
+npx create-app learning-app
+
+npx is the command - create-react-app is an argument - learning app is the name of the project
+
+npx install yarn - npx is the command - install is arg 1 - yarn is the package manager, used for things like trailwindcss
+
+yarn start - starts our local host server
