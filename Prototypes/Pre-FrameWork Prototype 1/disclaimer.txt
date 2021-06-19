@@ -1,1 +1,0 @@
-This was the first version of the general design for the website, I felt it was a bit too early 2000's feeling so I have looked up better designed code to incorporate into this project. The license for the code allows for direct ripping, merging and changing of the code. You can see it in license.txt, in the home directory
