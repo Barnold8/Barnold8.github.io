@@ -8,7 +8,7 @@ body {
   
 
   .typewriter h1 {
-    text-decoration: underline;
+   
     color: #fff;
     font-family: monospace;
     overflow: hidden; 
@@ -17,9 +17,25 @@ body {
     margin: 0 auto; 
     letter-spacing: .15em; 
     animation: 
-      typing 3.5s steps(30, end),
+      typing 1.75s steps(30, end),
       blink-caret .5s step-end infinite;
   }
+
+  .typewriter h2 {
+    text-decoration: underline;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid green; 
+    white-space: nowrap;
+    margin: 100 '50%'; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 1.75s steps(30, end),
+      blink-caret .51s step-end infinite;
+  }
+
+
 
   @keyframes typing {
     from { width: 0 }
