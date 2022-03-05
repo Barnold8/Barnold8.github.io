@@ -1,10 +1,98 @@
-$maincol: rgb(30,30,30);
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+$maincol: #12181B;
+$header: #2A2E35;
+$Headfont: #B2BECD;
+$Headfont_pressed: #3b0f81;
+$Headfont_hover: #621ad6;
 $inverM: rgb(255,255,255);
+$title: 'League Gothic', sans-serif;
 
 
 body{
-
+    padding: 0px;
+    margin: 0px;
     background-color: $maincol;
     color: $inverM;
 
 }
+
+
+.header{
+    overflow: hidden;
+    background-color: $header;
+    padding: 10px 10px;
+    color: $Headfont;
+    font-family: $title;
+    
+    .img{
+      float:left;
+      border-radius: 50%;
+      width: 50px;
+    
+    }
+
+    .a_cont{
+        color: $Headfont;
+        float: right;
+        text-align: center;
+        padding: 6px;
+        text-decoration: none;
+        font-size: 32px;
+        line-height: 35px;
+        border-radius: 4px;
+
+        &:hover { 
+            color: $Headfont_hover;
+            transition: all 0.5s ease;
+          }
+  
+        &:active { 
+            color: $Headfont_pressed;
+          }
+
+    }
+    .title{
+        color: $Headfont;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+
+    }
+
+
+   
+}
+
+
+@media screen and (max-width: 75px) {
+  .header .a_cont {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header .img {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+    .header .a_cont {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header .img {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+  }
+
