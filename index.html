@@ -6,22 +6,45 @@
 	<title>Brandon Wright</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' type='text/css' media='screen' href='Styles/index.css'>
-	<script>
 
-		function yearStudent(){
-			console.log("E")
-		}
-		yearStudent();
-
-	</script>
 </head>
 <body>
 	
+	
+
 	<p> <h1> Who am i? </h1> 
 		
-		
+		<p id="Year"> at the University of Nottingham studying computer science. I'm an avid programmer (My repos on github may be getting out of hand).</p>
 
 		</p>	
+
+	    <script> // JS is a necessary evil
+
+			function yearStudent(){
+				d = new Date();
+				d = d.getFullYear();
+				original_str = document.getElementById("Year").innerHTML;;
+				str = "";
+				switch(d){
+
+					case 2022:
+						str = "I'm a first year student"
+						break;
+						case 2023:
+						str = "I'm a second year student"
+						break;						
+						case 2024:
+						str = "I'm a third year student"
+						break;
+						default:
+						str = "YEAR ERROR, PLEASE MAKE ISSUE ON GITHUB!"
+						break;
+				}
+				document.getElementById("Year").innerHTML= str + original_str;
+			}
+			yearStudent();
+	
+		</script>
 
 
 </body>
