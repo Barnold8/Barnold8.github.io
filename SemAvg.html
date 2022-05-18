@@ -3,19 +3,24 @@
 <head>
 
     <title>
-        UON semester average calculator
+        UON compsci semester average calculator
         </title>
         <script src="JS/SemAvg.js"></script>
+        <link rel='stylesheet' type='text/css' media='screen' href='Styles/SemAvg.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
 </head> 
 
 <body>
-
-    <form onSubmit="ModuleMaker(this)" id="mainform" class="modulemaker">
-        <input type="text" class="startbox" placeholder="How many modules do you have this semester?">
-        <input type="submit" class="startbox">
-    </form> 
-
+    <div class="Title">UON compsci semester average calculator</div> 
+    <div class="ModuleSelectDivStart">
+        <form onSubmit="ModuleMaker(this)" id="mainform" class="modulemaker">
+            <input type="text" class="startbox" placeholder="How many modules do you have this semester?">
+            <input type="submit" class="startbox">
+        </form> 
+    </div>  
 
 </body> 
 

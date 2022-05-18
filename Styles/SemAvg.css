@@ -1,0 +1,65 @@
+body{ /* from https://uigradients.com/#Radar  */
+
+    background: #A770EF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.Title{
+
+    color:#fff;
+    font-size:232%;
+    font-weight: 900;
+    margin-left:32%;
+    margin-top: 8%;
+    text-shadow: 1px 1px 4px#5b5b5c;
+
+}
+
+input{
+
+    width:34%;
+    height:10%;
+    font-size: 180%;
+    margin-left: 33%;
+    margin-top: 1%;
+    box-shadow: 0 0 10px #5b5b5c;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: all .35s ease-in-out;
+
+}
+
+input:focus{
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none !important;
+}
+
+.ModuleSelectDivStart{
+    
+    width:100%;
+    margin-top: 4%;
+
+}
+
+.ModuleSelectDiv{
+    margin:0;
+}
+
+.counter{
+    width:7%;
+    margin-left: 46.5%;
+    margin-top: 10%;
+    border-radius: 12px;
+    background-color: #fff;
+    font-size:700%;
+
+}
+
+

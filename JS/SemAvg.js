@@ -97,8 +97,9 @@ function processModules(content){
     document.getElementsByTagName('body')[0].appendChild(a);
     let b = document.createElement("p")
     b.id = "xyz"
+    b.className = "counter"
     a.appendChild(b)
-    counting(total,10)
+    counting(total,25)
 
     event.preventDefault()
 
