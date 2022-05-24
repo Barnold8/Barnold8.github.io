@@ -31,9 +31,32 @@ function tenAmount(num){
 
 }
 
+function validChar(str){
+
+    let valid = "0123456789"
+    for(let i = 0; i < str.length; i++){
+
+        if(!(valid.includes(str[i]))){
+            return false
+        }
+
+    }
+    return true
+}
+
 function ModuleMaker(content){ // messy messy messy
 
     let value = content[0].value
+
+    if(!validChar(value) || value == ""){
+        alert(`A non number value was given. You wrote '${value}', a non number value, where something like '3' is expected`)
+        return
+    }
+    if(value > 40){
+        alert("You're pulling my leg.... right?")
+        return
+    }
+
     removeElemsByClass("startbox")
     removeElemsByClass("moduleMaker")
     let form =  document.createElement("form")
@@ -76,6 +99,15 @@ function processModules(content){
 
     let total = 0
     let counter = 0
+
+    for(let i = 0; i < content.length-1;i+=2 ){
+        if(!validChar(content[i].value) || value == ""){
+            alert("Error! One or more fields either have no data or incorrect data. Make sure you are writing positive numbers in these fields")
+            return
+        }
+        
+    }
+    
 
     for(let i = 0; i < content.length-1;i+=2 ){
         let num = parseInt(content[i].value)
