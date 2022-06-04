@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Timer</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Timer.css"> 
+    <script src="JS/Timer.js"></script>
+  </head> 
+  <body> 
+   
+    <div class="Timer">
+
+       <div class="top">
+        
+            <p class="ClickAbleNum" id="plusH" onclick="ParseTime(this.id)">+1</p>
+            <p class="ClickAbleNum" id="plusM" onclick="ParseTime(this.id)">+1</p>
+            <p class="ClickAbleNum" id="plusS" onclick="ParseTime(this.id)">+1</p>
+        
+        </div>
+       
+
+    </div>
+
+    <div class="Timer">
+
+        <div class="mid" id="Time">00:00:00</div>
+        <p class="broken">Timer is severly broken atm<p>
+
+    </div>
+    
+    <div class="Timer">
+
+        <div class="low">
+
+            <p class="ClickAbleNum2" id="minusH" onclick="ParseTime(this.id)">-1</p>
+            <p class="ClickAbleNum2" id="minusM" onclick="ParseTime(this.id)">-1</p>
+            <p class="ClickAbleNum2" id="minusS" onclick="ParseTime(this.id)">-1</p>
+
+        </div>
+        
+    </div>
+    
+<div class="go" id="go" onclick="TimeProcess()">Go</div> 
+  </body> 
+</html> 
