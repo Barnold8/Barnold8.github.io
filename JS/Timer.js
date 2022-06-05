@@ -79,22 +79,51 @@ function ParseTime(id){
 
 
 function TimeProcess(){ // broken atm
+
     running = true;
-    var date = new Date()
-    var countDownDate = new Date(`${date.getUTCDay()} ${date.getUTCMonth() + 1} ${date.getUTCFullYear()} ${document.getElementById("Time").innerHTML}`).getTime();
-    
+    const today = new Date()
+    const timeToAdd = document.getElementById("Time").innerHTML
+    const [hoursToAdd,minutesToAdd,secondsToAdd] = timeToAdd.split(":")
+    console.log(hoursToAdd,minutesToAdd,secondsToAdd)
+
+    if(hoursToAdd == "00" && minutesToAdd == "00" && secondsToAdd == "00"){
+        running = false;
+        return;
+    } 
+
+    const countDownTimeStamp = new Date()
+    countDownTimeStamp.setHours(today.getHours()+parseInt(hoursToAdd))
+    countDownTimeStamp.setMinutes(today.getMinutes()+parseInt(minutesToAdd))
+    countDownTimeStamp.setSeconds(today.getSeconds()+parseInt(secondsToAdd))
+    countDownTimeStamp.getTime()
+
     var timer = setInterval(() => {
+    
 
         var now = new Date().getTime()
-        var time = countDownDate - now
+
+        var time = countDownTimeStamp - now
         var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
         var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((time % (1000 * 60)) / 1000);
 
+        seconds = (seconds > 9) ? seconds.toString() : "0" + seconds.toString() 
+        minutes = (minutes > 9) ? minutes.toString() : "0" + minutes.toString() 
+        hours = (hours > 9) ? hours.toString() : "0" + hours.toString() 
+
+
+        if(hours <= 0 && minutes <= 0  && seconds <= 0){
+            // alert("Timer done!")
+            running = false
+            document.title = "TIMER IS DONE ⏰⏰⏰⏰⏰⏰⏰"
+            window.open("https://www.youtube.com/watch?v=XCMiU4Tacpw", '_blank').focus();
+            clearInterval(timer)
+            return
+        }
+
         document.getElementById("Time").innerHTML = `${hours}:${minutes}:${seconds}`
+        document.title =  `${hours}:${minutes}:${seconds}`
 
+    
     }, 1000);
-
-
-
 }
