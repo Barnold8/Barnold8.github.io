@@ -34,6 +34,7 @@ body .title {
   padding: 10px 10px;
   color: #B2BECD;
   font-family: "League Gothic";
+  box-shadow: 3px 3px 3px #121316;
 }
 
 .header address {
@@ -124,27 +125,71 @@ body .title {
     animation: RGBTEXT 25s infinite; 
 }
 
+.About{
 
-.Infor-child{
+  margin-right:30%;
+  width:100%;
+  display:block;
+}
+
+.About-Title{
+
+  
+  margin: 0 auto;
+  display: table; 
+
+  font-size: 5vw;
+  font-weight: 900;
+  border-right: .15em solid #621ad6;
+  animation: 
+    blink-caret .75s step-end infinite;
+}
+
+.AboutChild{
   width:50%;
-  height:100%;
-  /* background-color: #15ff00; */
   float:left;
+  
 }
 
-#Information-sec{
-  height:330px;
+#Abouttxt{
+  text-align: center;
+  width:45%;
+}
+
+#link{
+
+  font-weight: 900;
+  text-decoration: none;
+  color:white;
+
+}
+
+#link:hover{
+  color: #6200ff;
+  font-size: 110%;
+  text-decoration: underline;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+}
+
+
+.PFP-Container{
+  padding-top: 5%;
+
+}
+
+.PFP {
+  border-radius: 50%;
+  height: 210px;
+  width: 210px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  box-shadow: 3px 3px 3px #12181B;
  }
-
-#me{
-  height:100%;
-  width:30%;
-  border-radius: 100%;
-  float:right;
-  margin-right:10%;
-}
-
-
 
 
 .Footer{
@@ -155,6 +200,12 @@ body .title {
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #621ad6; }
 }
 
 @-webkit-keyframes RGBTEXT {

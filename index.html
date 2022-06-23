@@ -6,31 +6,100 @@
 	<title>Brandon Wright</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' type='text/css' media='screen' href='Styles/index.css'>
-
+	
 </head>
 <body>
 
 	<div class="header">
 		<a href="https://github.com/Barnold8"><img class="img" src="https://avatars.githubusercontent.com/u/55092542?v=4"/> </a>
-		  <div class="a_cont_me">Brandon Wright</div>		  
-		  <a href="#about" class="a_cont">About 📘</a>
+		  <div class="a_cont_me">Brandon Wright - Portfolio</div>		  
+		  <a href="#About" class="a_cont">About 📘</a>
 		  <a href="mailto:psybw7@nottingham.ac.uk" class="a_cont">Contact 📧</a>
 	  </div>
 
+
+	  <div class="PFP-Container">
+		<div class="PFP">
+			<img src="https://avatars.githubusercontent.com/u/55092542?v=4" alt="">
+		</div>
+	 </div>
+
+
+	 
+	<div class="About-Title" id="About"></div>
 	
+	 
+	 <div style="margin:auto;display:flex;align-items: center;justify-content: center;">
+		<p id="Abouttxt"> I'm a £ year old passionate programmer from the UK studying at the <a href="https://www.nottingham.ac.uk/" id="link"> University of Nottingham</a>! $! 
+			I spend most of my free time studying programming related topics. I am currently more of a fan of the low level side of things, my most recent endeavours being, 
+			<a href="https://www.rust-lang.org" id="link">Rust </a> and <a href="https://www.libsdl.org" id="link">SDL2</a> <a href="https://www.learncpp.com" id="link">(C++).</a>
+			I started my journey of computing back in 2017 at Nottingham college;</p> 	
+	 </div>
 
-	<!-- <div class="About">Lorem ipsum</div>
-
-	<div class="Infor" id="Information-sec">
-		<div class="Infor-child">Goodbye</div>
-		<div class="Infor-child">Universe</div>
+	 <div style="margin:auto;display:flex;align-items: center;justify-content: center;">
+		<ul>
+			<li>Level 1 IT (Office skills, basics of computing) -- 2017-2018</li>
+			<li>Level 2 IT (Systems and support) -- 2018-2019</li>
+			<li>Level 3 IT (Software and games) -- 2019-2021</li>
+		</ul>
 	</div>
 
-	<footer class="Footer">Made by me:)</footer> -->
 
-	<h1 style="text-align: center;">UNDER CONSTRUCTION</h1>
 
-	<img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1327748/crane-clipart-md.png">
+	<script> // JS is a necessary evil
+		var i = 0;
+		function yearStudent(){
+			d = new Date();
+			d = d.getFullYear();
+			original_str = document.getElementById("Abouttxt").innerHTML;
+			
+			switch(d){
+				case 2022:
+						original_str = original_str.replace("$","I'm currently a first year student");
+						break;
+					case 2023:
+						original_str = original_str.replace("$","I'm currently a second year student");
+						break;						
+					case 2024:
+						original_str = original_str.replace("$","I'm currently a third year student");
+						break;
+					default:
+						str = "YEAR ERROR, PLEASE MAKE ISSUE ON GITHUB!"
+						break;
+			}
+			document.getElementById("Abouttxt").innerHTML= original_str;
+		}
+		function age(){
+			let date = new Date().getFullYear();
+			let text = document.getElementById("Abouttxt").innerHTML.replace("£",date -2001);;
+
+			document.getElementById("Abouttxt").innerHTML = text;
+		}
+		
+		function typeWriter(){
+			
+			let txt = "About me";
+			let speed = 1;
+			if (i < txt.length) {
+				document.getElementById("About").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed*100);
+  			}
+		}
+
+		typeWriter()
+		yearStudent();
+		age();
+
+	</script>
+
+
+	<!-- <div id="Information-sec">
+		<div class="Infor-child">Goodbye</div>
+		<div class="Infor-child">Universe</div>
+	</div> -->
+
+	<footer class="Footer">Made by me:)</footer>
 
 
 </body>
