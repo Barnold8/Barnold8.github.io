@@ -6,19 +6,22 @@
 	<title>Brandon Wright</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' type='text/css' media='screen' href='Styles/index.css'>
-	
+
 </head>
 <body>
 
 	<div class="header">
 		<a href="https://github.com/Barnold8"><img class="img" src="https://avatars.githubusercontent.com/u/55092542?v=4"/> </a>
 		  <div class="a_cont_me">Brandon Wright - Portfolio</div>		  
-		  <a href="#About" class="a_cont">About 📘</a>
+		 
 		  <a href="mailto:psybw7@nottingham.ac.uk" class="a_cont">Contact 📧</a>
+		 
+		  <a href="#Projects-scroll" class="a_cont">Projects 💻</a>
+		  <a href="#About-scroll" class="a_cont">About 📘</a>
 	  </div>
 
 
-	  <div class="PFP-Container">
+	  <div class="PFP-Container" id="About-scroll">
 		<div class="PFP">
 			<img src="https://avatars.githubusercontent.com/u/55092542?v=4" alt="">
 		</div>
@@ -42,65 +45,146 @@
 			<li>Level 2 IT (Systems and support) -- 2018-2019</li>
 			<li>Level 3 IT (Software and games) -- 2019-2021</li>
 		</ul>
+		
+	</div>
+
+	
+	<span id="Projects-title" ></span>
+	<div class="Projects" id="Projects">
+		<div class="About-Title-Other" id="Projects-scroll"><span style="white-space: nowrap;" id="right" class="right" onclick="project_data('right')">⬅ &nbsp; &nbsp; &nbsp; &nbsp; </span>
+			My projects
+			<span style="white-space: nowrap;" id="left" class="left" onclick="project_data('left')"> &nbsp; &nbsp; &nbsp; &nbsp;➡</span></div>
+
+		<a id="Title-Link"><div id="Title" >aa</div> </a>
+		<a id="Content-Link"><div id="Content"> </div> </a>
+
 	</div>
 
 
-
-	<script> // JS is a necessary evil
-		var i = 0;
-		function yearStudent(){
-			d = new Date();
-			d = d.getFullYear();
-			original_str = document.getElementById("Abouttxt").innerHTML;
-			
-			switch(d){
-				case 2022:
-						original_str = original_str.replace("$","I'm currently a first year student");
-						break;
-					case 2023:
-						original_str = original_str.replace("$","I'm currently a second year student");
-						break;						
-					case 2024:
-						original_str = original_str.replace("$","I'm currently a third year student");
-						break;
-					default:
-						str = "YEAR ERROR, PLEASE MAKE ISSUE ON GITHUB!"
-						break;
-			}
-			document.getElementById("Abouttxt").innerHTML= original_str;
-		}
-		function age(){
-			let date = new Date().getFullYear();
-			let text = document.getElementById("Abouttxt").innerHTML.replace("£",date -2001);;
-
-			document.getElementById("Abouttxt").innerHTML = text;
-		}
-		
-		function typeWriter(){
-			
-			let txt = "About me";
-			let speed = 1;
-			if (i < txt.length) {
-				document.getElementById("About").innerHTML += txt.charAt(i);
-				i++;
-				setTimeout(typeWriter, speed*100);
-  			}
-		}
-
-		typeWriter()
-		yearStudent();
-		age();
-
-	</script>
-
-
-	<!-- <div id="Information-sec">
-		<div class="Infor-child">Goodbye</div>
-		<div class="Infor-child">Universe</div>
-	</div> -->
-
-	<footer class="Footer">Made by me:)</footer>
+	<footer class="Footer"><marquee><img src="Images/mario.png" width="15px" height="15px">Made by <a href="https://github.com/Barnold8" id="link">Barnold</a><img src="Images/mario.png" width="15px" height="15px"></footer></marquee></footer>
 
 
 </body>
+
+<script> // JS is a necessary evil / Sidenote, this is using more JS than i expected but im too lazy to make a JS file (This is not what should be done in the real world)
+	var i = 0;
+	var index = 0;
+
+	var titles = ["Pic2SpreadSheet","CMD Clock","Terminar","ImageToASCII","IdeaAPI","P5JS (My sketches)","Twitter terms"];
+	var paras = [
+		"This project was inspired by 'StandUpMaths on YouTube' in regards to their stand up set showing images being made into excel files. I decided myself that it would be\
+		a fun project to do, so in about 2 weeks, the project was finished!",
+		"This is just a simple clock that supports multiple fonts to be rendered within the console window, using python!",
+		"This is a calendar app that takes the raw data from the UON calendar for a student (given they provide the link that links to their calendar). I then processes it to a readable format within the console. NOTE: due to changes with the calendar, this may not work as intended anymore. ",
+		"A simple program that writes an image into a respective ASCII representation using C++ and an image library called stb!",
+		"I wrote this API to simply give out programming ideas, it also has a small easter egg to return dad jokes instead!",
+		"P5JS is a JS graphics library that uses the Processing library in a web editor. I have used this to create many little projects that have a lovely visual aspect!",
+		"This is a old project I did for college in my Year 3 GUI module. It uses the twitter api and the Tkinter library from python. It is not the most optimised but it gets the job done"
+	];
+	var links = [
+		"https://github.com/Barnold8/Pic2SpreadSheet",
+		"https://github.com/Barnold8/CMD_CLOCK",
+		"https://github.com/Barnold8/Terminar",
+		"https://github.com/Barnold8/ImageToAscii",
+		"https://github.com/Barnold8/IdeaAPI",
+		"https://editor.p5js.org/Barnold__/sketches",
+		"https://github.com/Barnold8/Twitter-terms"
+	];
+
+	// Start init of project info 
+	document.getElementById("Title").innerHTML = `${titles[0]}`;
+	document.getElementById("Content").innerHTML = `${paras[0]}`;
+	document.getElementById("Title-Link").href= `${links[0]}`;
+
+
+	function opacityAnim(element){ // thanks to https://stackoverflow.com/questions/6121203/how-to-do-fade-in-and-fade-out-with-javascript-and-css
+		var op = 0.1;  // initial opacity
+		element.style.display = 'block';
+		var timer = setInterval(function () {
+			if (op >= 2){
+				clearInterval(timer);
+			}
+			element.style.opacity = op;
+			element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+			op += op * 0.1;
+		}, 10);
+	}
+
+	function project_data(something){ // for some reason JS didnt let me decrement index with switch case statements so nested ifs it is
+		//console.log(index)
+
+		if(titles.length !== paras.length){
+			console.log(`Titles length and paras length are not equal. Titles [${titles.length}]\tParas [${paras.length}]`);
+			return;
+		}
+
+		if(something == "right"){
+			if(index == 0){
+				index =  titles.length -1;
+			}else{
+				index--;
+			}
+
+		}else if(something == "left"){
+			if(index == titles.length-1){
+				index = 0;
+			}else{
+				index++;
+			}
+		}
+		document.getElementById("Title").innerHTML = `${titles[index]}`
+		document.getElementById("Content").innerHTML = `${paras[index]}`
+		opacityAnim(document.getElementById("Title"));
+		opacityAnim(document.getElementById("Content"));
+		document.getElementById("Title-Link").href=`${links[index]}`;
+
+	}
+
+	function yearStudent(){
+		d = new Date();
+		d = d.getFullYear();
+		original_str = document.getElementById("Abouttxt").innerHTML;
+		
+		switch(d){
+			case 2022:
+					original_str = original_str.replace("$","I'm currently a first year student");
+					break;
+				case 2023:
+					original_str = original_str.replace("$","I'm currently a second year student");
+					break;						
+				case 2024:
+					original_str = original_str.replace("$","I'm currently a third year student");
+					break;
+				default:
+					str = "YEAR ERROR, PLEASE MAKE ISSUE ON GITHUB!"
+					break;
+		}
+		document.getElementById("Abouttxt").innerHTML= original_str;
+	}
+	function age(){
+		let date = new Date().getFullYear();
+		let text = document.getElementById("Abouttxt").innerHTML.replace("£",date - 2001);;
+
+		document.getElementById("Abouttxt").innerHTML = text;
+	}
+	
+	function typeWriter(){
+		
+		let txt = "About me";
+		let speed = 1;
+		if (i < txt.length) {
+			document.getElementById("About").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed*100);
+		  }
+	}
+
+
+
+	typeWriter();
+	yearStudent();
+	age();
+
+</script>
+
 </html>
