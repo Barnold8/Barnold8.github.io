@@ -10,7 +10,7 @@ This is my personal portfolio type webpage!
 
 ---------------------------------------
 
-# UON Compsci semester average calculator -> https://barnold8.github.io/SemAvg.html
+# UON Compsci semester average calculator -> https://barnold8.github.io/SemAvg.html (JS returns user to site on error, NEEDS TO BE FIXED)
 
 This a thrown together page to help myself and fellow students calculate their average grade for their uni semester!
 
