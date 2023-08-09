@@ -21,3 +21,9 @@ This a thrown together page to help myself and fellow students calculate their a
 I got bored of using the google timer. Why use the google one when i can make my own as a fun late night exercise. 
 
 ---------------------------------------
+
+# RPS (Rock paper scissors) -> https://barnold8.github.io/rps.html
+
+I saw a tweet and thought itd be cool to recreate the content.
+
+---------------------------------------
