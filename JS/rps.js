@@ -97,7 +97,7 @@ function draw() {
     noLoop();
     clear();
     background('#191919');
-    fill(0, 102, 153);
+    fill('#7932db');
     textSize(128);
     text(initial_components[0].type, 300, 300);
     text("WINS!!", 220, 450);
