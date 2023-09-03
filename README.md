@@ -1,7 +1,5 @@
 These websites wont be the most "responsive" in terms of CSS but for a standard monitor itll be fine. 
 
-![](/Images/Fine.jpg)
-
 ---------------------------------------
 
 # Personal site -> https://barnold8.github.io/index.html
