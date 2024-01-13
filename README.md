@@ -25,3 +25,9 @@ I got bored of using the google timer. Why use the google one when i can make my
 I saw a tweet and thought itd be cool to recreate the content.
 
 ---------------------------------------
+
+# Dark souls 1 soul level calculator -> https://barnold8.github.io/DarkSouls1Leveling.html
+
+I was playing Dark souls 1 and I wanted to know how many souls I needed to get to x level. I didnt want to manipulate the formula over and over again and found it useful to make this simple form to somewhat automate the process
+
+---------------------------------------
