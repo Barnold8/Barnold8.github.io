@@ -3,28 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/ds1.css">
+  <link href="https://fonts.cdnfonts.com/css/optimus-princeps" rel="stylesheet">
   <title>Soul Level Form</title>
   <script src="JS/DS1.js"></script>
 </head>
 <body>
-
-  <h2>Soul Level Form</h2>
-
-  <form action="#" onsubmit="return false">
+  <div class="content">
+  <div class="center">
+  <h1>Soul Calculator</h2>
+  <form class="center" action="#" onsubmit="return false">
+  
     <label for="currentSoulLevel">Current Soul Level:</label>
-    <input type="text" id="currentSoulLevel" name="currentSoulLevel" required>
+    <input class="form_type" type="text" id="currentSoulLevel" name="currentSoulLevel" required>
 
     <br>
 
     <label for="desiredSoulLevel">Desired Soul Level:</label>
-    <input type="text" id="desiredSoulLevel" name="desiredSoulLevel" required>
+    <input class="form_type" type="text" id="desiredSoulLevel" name="desiredSoulLevel" required>
 
     <br>
-
-    <input type="submit" value="Submit" onclick="soulCalc()">
+    <div class="center_button">
+      <button onclick="soulCalc()">
+        <div class="default-btn">
+          <span>Calculate souls</span>
+        </div>
+        <div class="hover-btn">
+          <span>Calculate now</span>
+        </div>
+      </button>
+      </div>  
   </form>
 
-  <div id="soulsNeeded"></div>
- 
+  <div id="number" class="center"></div>
+
+</div>
+
+</div>
+
+<div class="footer"><img src="Images/dark-souls-bonfire.gif"/> </div>
+
 </body>
 </html>

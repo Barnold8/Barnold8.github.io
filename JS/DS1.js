@@ -25,5 +25,35 @@ function soulCalc() {
         
     }
 
-    soulsNeeded.innerText = `You need ${souls} souls`
-  }
+    console.log(`You need ${souls} souls`)
+
+    counting(souls,-1);
+
+
+
+
+}
+
+
+function counting(num,time){
+
+    let start = 0;
+    let interval = time/num;
+
+    let counter = setInterval(function () {
+        start += 1000;
+        document.getElementById("number").textContent = `You need ${start} souls`;
+
+        if (start >= num) {
+            clearInterval(counter);
+            document.getElementById("number").textContent = `You need ${num} souls`;
+        }
+    },interval);
+
+    document.getElementById("number").textContent = `You need ${num} souls`;
+
+}
+
+
+
+

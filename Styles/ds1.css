@@ -1,0 +1,133 @@
+body{
+    margin:0;
+    background-color: #0c0c0c;
+    color: aliceblue;
+    font-family: 'OptimusPrinceps', sans-serif;
+    font-family: 'OptimusPrincepsSemiBold', sans-serif;
+}
+
+input, label {
+    display:block;
+}
+
+h1{
+    text-align: center;
+    font-size: 350%;
+}
+
+.content{
+
+    width: 100%;
+    height: auto;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+
+}
+
+.form_type{
+    width:100%;
+}
+
+.center_button{
+
+    /* display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%; */
+
+
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+  
+    padding: 10px;
+
+}
+
+.center{
+ 
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+  
+    padding: 10px;
+}
+
+
+.footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background: rgb(12,12,12);
+    background: linear-gradient(180deg, rgba(12,12,12,1) 0%, rgba(15,15,15,1) 46%, rgba(238,146,7,1) 82%, rgba(255,175,0,1) 95%);
+}
+
+
+img{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:5%;
+}
+
+#number{
+    text-align: center;
+    font-size: 155%;
+}
+
+button {
+ position: relative;
+ overflow: hidden;
+ outline: none;
+ cursor: pointer;
+ border-radius: 50px;
+ background-color: hsl(0, 0%, 13%);
+ border: solid 4px hsl(0, 0%, 87%);
+ font-family: inherit;
+}
+
+.default-btn,.hover-btn {
+ background-color: hsl(0, 0%, 13%);
+ display: -webkit-box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ padding: 15px 20px;
+ border-radius: 50px;
+ font-size: 10px;
+ font-weight: 500;
+ text-transform: uppercase;
+ transition: all .3s ease;
+}
+
+.hover-btn {
+ position: absolute;
+ inset: 0;
+ background-color: hsl(0, 0%, 87%);
+ transform: translate(0%,100%);
+}
+
+.default-btn span {
+ color: hsl(0, 0%, 100%);
+}
+
+.hover-btn span {
+ color: hsl(0, 0%, 13%);
+}
+
+button:hover .default-btn {
+ transform: translate(0%,-100%);
+}
+
+button:hover .hover-btn {
+ transform: translate(0%,0%);
+}
