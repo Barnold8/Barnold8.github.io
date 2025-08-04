@@ -1,0 +1,216 @@
+/**
+ * index.css CSS file
+ *
+ * Author: Brandon Wright <Brandon.Antony.Wright@outlook.com>
+ * Date: Aug 04, 2025
+ * License: MIT
+ *
+ * Note: This is heavily plaigarised from https://ysap.sh/ with my own modifications
+ */
+
+
+#container {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	max-width: 800px;
+	padding: 0 6px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#top-nav {
+	text-align: left;
+	border-bottom: 1px solid #CCD6F6; 
+	margin-bottom: 21px;
+}
+
+#top-nav > ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+#top-nav > ul > li {
+	float: left;
+}
+
+#top-nav > ul > li.right {
+	float: right;
+}
+
+#top-nav > ul > li > a {
+	display: block;
+	text-align: center;
+	padding: 14px 13px;
+	text-decoration: none;
+}
+
+#top-nav > ul > li a:hover {
+	background-color: #333;;
+}
+
+#top-nav > ul > li .active {
+	color: var(--color3);
+}
+
+.title{
+
+    font-size: 24px;
+}
+
+
+body {
+	background-color: #0A192F;
+	font-size: 13px;
+    color: #CCD6F6;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a, a:visited {
+	color: #CCD6F6;
+	text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Typewriter https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+#contents{
+
+    font-size: medium;
+
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* Typewriter https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+
+/* Animated glitch */
+
+
+.center-text {
+	margin: auto;
+	font-size: 24px;
+}
+
+.glitch {
+	position: relative;
+	mix-blend-mode: lighten;
+}
+
+.glitch:before,
+.glitch:after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: black;
+	clip: rect(0, 0, 0, 0);
+}
+
+.glitch:before {
+	left: -1px;
+	text-shadow: 1px 0 rgba(255, 0, 0, 0.7);
+}
+
+.glitch:after {
+	left: 1px;
+	text-shadow: -1px 0 rgba(0, 0, 255, 0.7);
+}
+
+.glitch:hover:before {
+	animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
+}
+
+.glitch:hover:after {
+	animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes glitch-loop-1 {
+	0% {
+		clip: rect(5px, 9999px, 10px, 0);
+	}
+	25% {
+		clip: rect(8px, 9999px, 20px, 0);
+	}
+	50% {
+		clip: rect(15px, 9999px, 25px, 0);
+	}
+	75% {
+		clip: rect(12px, 9999px, 22px, 0);
+	}
+	100% {
+		clip: rect(10px, 9999px, 28px, 0);
+	}
+}
+
+@keyframes glitch-loop-2 {
+	0% {
+		top: -1px;
+		left: 1px;
+		clip: rect(10px, 9999px, 25px, 0);
+	}
+	25% {
+		top: -2px;
+		left: 2px;
+		clip: rect(15px, 9999px, 18px, 0);
+	}
+	50% {
+		top: -1px;
+		left: 1px;
+		clip: rect(8px, 9999px, 14px, 0);
+	}
+	75% {
+		top: 0px;
+		left: -2px;
+		clip: rect(12px, 9999px, 19px, 0);
+	}
+	100% {
+		top: -1px;
+		left: -1px;
+		clip: rect(14px, 9999px, 24px, 0);
+	}
+}
+
+ 
+/*  */
