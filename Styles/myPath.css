@@ -95,6 +95,24 @@
     margin: auto;
 }
 
+#FE-Splitter{
+
+    width: 99%;
+    margin-left: 1px;
+    text-align:center;
+    padding-bottom:2px;
+    margin-bottom: 1px;
+    background:
+        linear-gradient(rgba(135, 136, 143, 1) 0%, rgba(135, 136, 143, 1) 44%, rgba(231, 231, 233, 1) 100%);
+    background-size:100% 2px ;
+
+}
+
+#FE-DropDownText{
+    margin-top: 10px;
+    color: var(--FE-ContentText);
+}
+
 #left {
     width: 49%;
     margin-left: 1%;
