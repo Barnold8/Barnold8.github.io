@@ -144,7 +144,19 @@ a, a:visited {
 .avatar {
   width: 200px;
   height: auto;
+  
   border-radius: 50%;
+  box-shadow: 0 0 0 3px #61dafb;
+  
+}
+
+.avatar:hover {
+  width: 200px;
+  height: auto;
+  
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px yellow;
+  
 }
 
 
@@ -294,7 +306,40 @@ a.highlight:visited{
 
 /* Highlighting */
 
+/* Cards */
 
+.grid-container {
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5rem;
+	margin-top: 2rem;
+}
+
+.card {
+	background-color: #1a2739;
+	border: 1px solid #2a3f55;
+	border-radius: 8px;
+	padding: 1rem;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+	margin-top: 0;
+	color: #61dafb;
+}
+
+.card p {
+	color: #c9d1d9;
+}
+
+/* Cards */
 
 /* Animations */
 
@@ -364,4 +409,7 @@ a.highlight:visited{
 }
 
 /* Animations */
+
+
+
 
