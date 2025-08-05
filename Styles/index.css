@@ -62,6 +62,11 @@
     font-size: 24px;
 }
 
+/* CURSOR FROM: https://jeelh.itch.io/retro-cursor */
+
+html{
+	cursor: url("../Images/Cursors/Cursor.png"), auto;
+}
 
 body {
 	background-color: #0A192F;
@@ -69,6 +74,7 @@ body {
     color: #CCD6F6;
     font-family: "Google Sans Code", monospace;
     font-optical-sizing: auto;
+	
 }
 
 ul {
@@ -78,6 +84,7 @@ ul {
 a, a:visited {
 	color: #CCD6F6;
 	text-decoration: none;
+	cursor: url("../Images/Cursors/Move.png"), auto;
 }
 
 .footer {
@@ -256,6 +263,7 @@ a, a:visited {
 
 .hover-target:hover + .hover-card {
   display: block; 
+  
 }
 
 /* Hover over text CSS */
@@ -275,6 +283,12 @@ a.highlight:visited{
 .hover-text{
 
     color:yellow;
+
+}
+
+.hover-text:hover{
+
+	cursor: url("../Images/Cursors/Help\ Select.png"), auto;
 
 }
 
