@@ -5,7 +5,7 @@
  * Date: Aug 04, 2025
  * License: MIT
  *
- * Note: This is heavily plaigarised from https://ysap.sh/ with my own modifications
+ * Note: This is heavily plaigarised from https://ysap.sh/ with my own modifications using code from multiple online sources
  */
 
 
@@ -104,22 +104,87 @@ a, a:visited {
 #contents{
 
     font-size: medium;
+	max-width: 600px;
+    margin-top: 10px;
+}
+
+/* Left right container alignment */
+.container {
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px;
+}
+
+.box {
+  flex: 1; /* equal width */
+  padding: 20px;
+  text-align: center;
+}
+
+.box-left {
+ text-align: left;
+}
+
+.box-right {
+ 
+} 
+
+/* Left right container alignment */
+
+/* Pfp css */
+
+
+.avatar {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+#avatarContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+#navi,
+#infoi {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#infoi {
+  z-index: 10;
+}
+
+/* Pfp css */
+
+
+/* Misc */
+
+#hidden{
+
+  opacity: 1;
+  transition: opacity 2s ease-out;
 
 }
 
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+#hidden:hover{
+
+  opacity: 0;
+
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
+
+.marginText{
+
+	margin-top: 50px;
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
+
+
+/* Misc */
+
+
 
 /* Typewriter https://css-tricks.com/snippets/css/typewriter-effect/ */
 
@@ -165,6 +230,59 @@ a, a:visited {
 .glitch:hover:after {
 	animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
 }
+
+
+/* Hover over text CSS */
+
+.hover-wrapper {
+  position: relative; 
+  display: inline-block;
+}
+
+.hover-card {
+  position: fixed;
+  display: none;
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  pointer-events: none; 
+  z-index: 1000;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.hover-target:hover + .hover-card {
+  display: block; 
+}
+
+/* Hover over text CSS */
+
+
+/* Highlighting */
+a.highlight{
+    color:yellow;
+}
+
+a.highlight:visited{
+
+    color:yellow;
+
+}
+
+.hover-text{
+
+    color:yellow;
+
+}
+
+/* Highlighting */
+
+
+
+/* Animations */
 
 @keyframes glitch-loop-1 {
 	0% {
@@ -212,5 +330,24 @@ a, a:visited {
 	}
 }
 
- 
-/*  */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* Animations */
+
