@@ -8,6 +8,18 @@
  * Note: This is heavily plaigarised from https://ysap.sh/ with my own modifications using code from multiple online sources
  */
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--BG: #0A192F;
+	--HIGHLIGHT: yellow;
+	--IMPORTANT: #61DAFB;
+	--NAV-ACTIVE: #333;
+	--TEXT: #CCD6F6;
+}
 
 #container {
 	position: relative;
@@ -16,11 +28,6 @@
 	margin-top: 10px;
 	max-width: 800px;
 	padding: 0 6px;
-}
-
-* {
-	margin: 0;
-	padding: 0;
 }
 
 #top-nav {
@@ -49,8 +56,12 @@
 	text-decoration: none;
 }
 
+#top-nav > ul > li .active {
+	color: var(--IMPORTANT);
+}
+
 #top-nav > ul > li a:hover {
-	background-color: #333;;
+	background-color: var(--NAV-ACTIVE);
 }
 
 .title{
@@ -65,7 +76,7 @@ html{
 }
 
 body {
-	background-color: #0A192F;
+	background-color: var(--BG);
 	font-size: 13px;
     color: #CCD6F6;
     font-family: "Google Sans Code", monospace;
@@ -78,7 +89,7 @@ ul {
 }
 
 a, a:visited {
-	color: #CCD6F6;
+	color: var(--TEXT);
 	text-decoration: none;
 	cursor: url("../Images/Cursors/Move.png"), auto;
 }
@@ -128,9 +139,9 @@ a, a:visited {
  text-align: left;
 }
 
-.box-right {
+/* .box-right {
  
-} 
+}  */
 
 /* Left right container alignment */
 
@@ -142,7 +153,7 @@ a, a:visited {
   height: auto;
   
   border-radius: 50%;
-  box-shadow: 0 0 0 3px #61dafb;
+  box-shadow: 0 0 0 3px var(--IMPORTANT);
   
 }
 
@@ -151,7 +162,7 @@ a, a:visited {
   height: auto;
   
   border-radius: 50%;
-  box-shadow: 0 0 0 3px yellow;
+  box-shadow: 0 0 0 3px var(--HIGHLIGHT);
   
 }
 
@@ -279,18 +290,18 @@ a, a:visited {
 
 /* Highlighting */
 a.highlight{
-    color:yellow;
+    color:var(--HIGHLIGHT);
 }
 
 a.highlight:visited{
 
-    color:yellow;
+    color:var(--HIGHLIGHT);
 
 }
 
 .hover-text{
 
-    color:yellow;
+    color:var(--HIGHLIGHT);
 
 }
 
@@ -328,11 +339,11 @@ a.highlight:visited{
 
 .card h3 {
 	margin-top: 0;
-	color: #61dafb;
+	color: var(--IMPORTANT);
 }
 
 .card p {
-	color: #c9d1d9;
+	color: var(--TEXT);
 }
 
 /* Cards */
@@ -350,7 +361,7 @@ a.highlight:visited{
   width: 960px;
 }
 .slider::before, .slider::after {
-  background: linear-gradient(to right, #0A192F 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right,var(--BG) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100px;
   position: absolute;
@@ -460,6 +471,5 @@ a.highlight:visited{
     transform: translateX(calc(-250px * 7));
   }
 }
-
 
 /* Animations */
