@@ -4,9 +4,19 @@
     --height-reduction: 300px;
     --FE-BG: #C0C7C8;
     --FE-Shadow: #65666B;
+    --FE-Highlight: #E7EAEA;
     --FE-Titlebar: #0000A8;
     --FE-BarMargin: 3px;
     --FE-ContentText: black;
+    --FE-DividerWidth: 2px;
+}
+
+@font-face {
+    font-family: 'Windows 95';
+    src: url('../fonts/w-95-sans-serif.woff2') format('woff2'),
+        url('../fonts/w-95-sans-serif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 #container {
@@ -21,6 +31,7 @@
 }
 
 .FE-container {
+  font-family: "Windows 95";
   flex-grow: 1;
   width: 100%;
   background: var(--FE-BG); 
@@ -38,16 +49,19 @@
 
 #FE-top-nav {
     width:99%;
+
     margin: var(--FE-BarMargin) var(--FE-BarMargin) ;
 	text-align: left;
 	background-color: var(--FE-Titlebar);
-	margin-bottom: 21px;
+	margin-bottom: 11px;
+    color: white;
 }
 
 
 #FE-top-nav > ul {
 	list-style: none;
 	overflow: hidden;
+
 }
 
 #FE-top-nav > ul > li {
@@ -68,8 +82,9 @@
 
 #FE-Icon{
 
-    width:100%;
-    margin-top: 5px;
+    width:50%;
+    height:50%;
+    margin:10px 7px;
     height:auto;
     
 
@@ -95,6 +110,35 @@
     margin: auto;
 }
 
+#FE-SubTitle{
+
+    width:99%;
+    border-top: var(--FE-BarMargin) solid var(--FE-Shadow);
+    border-left: var(--FE-BarMargin) solid var(--FE-Shadow);
+    border-bottom: var(--FE-BarMargin) solid var(--FE-Highlight);
+    border-right: var(--FE-BarMargin) solid var(--FE-Highlight);
+  
+}
+
+#FE-SubTitle > li{
+
+    margin: 7px;
+}
+
+#FE-FolderSelector{
+
+    width:98%;
+    overflow-y:auto;
+    height: 10rem;
+    background-color: white;
+    margin: 3px;
+    border-top: var(--FE-BarMargin) solid var(--FE-Shadow);
+    border-left: var(--FE-BarMargin) solid var(--FE-Shadow);
+    border-bottom: var(--FE-BarMargin) solid var(--FE-Highlight);
+    border-right: var(--FE-BarMargin) solid var(--FE-Highlight);
+
+}
+
 #FE-Splitter{
 
     width: 99%;
@@ -108,9 +152,30 @@
 
 }
 
+#FE-DropDownBox{
+
+    border-top: var(--FE-DividerWidth)solid black ;
+    border-left: var(--FE-DividerWidth) solid black ;
+    border-right:var(--FE-DividerWidth) solid black ;
+    border-bottom:var(--FE-DividerWidth) solid var(--FE-Highlight);
+    background-color: white;
+
+    width: auto;
+
+}
+
+
 #FE-DropDownText{
     margin-top: 10px;
     color: var(--FE-ContentText);
+    
+}
+
+#FE-Footer{
+    margin-left: 10px;
+    position: absolute;
+    bottom: 10px;
+
 }
 
 #left {
@@ -139,13 +204,7 @@
 
 /* WIN95 css taken from https://github.com/themesberg/windows-95-ui-kit/tree/master*/
 
-@font-face {
-    font-family: 'Windows 95';
-    src: url('fonts/w-95-sans-serif.woff2') format('woff2'),
-        url('fonts/w-95-sans-serif.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 .btn-primary {
     color: #000;

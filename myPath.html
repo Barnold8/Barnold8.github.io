@@ -26,14 +26,14 @@
     <div class="FE-container">
       <div class="FE-box">
         <!-- Title bar on window -->
-        <div id="FE-top-nav" style="margin-bottom: 1px;">
+        <div id="FE-top-nav">
             <ul>
-                <li><a href="index.html"><img id="FE-Icon" src="Images/Icons/Search folder.png"/></a></li>
-                <li><p id="FE-Text" style="color:white;">Exploring - My Path</p></li> 
+                <li><img id="FE-Icon" src="Images/Icons/Search folder.png"/></li>
+                <li><p id="FE-Text">Exploring - My Path</p></li> 
                 <li class="right">
                     <p id="FE-NavButton">
                     <button class="btn mr-2 mb-2 btn-primary" type="button">
-                        <span class="btn-text">▬</span>
+                        <span class="btn-text">X</span>
                     </button>
                     </p>
                 </li> 
@@ -47,7 +47,7 @@
                 <li class="right">
                     <p id="FE-NavButton">
                     <button class="btn mr-2 mb-2 btn-primary" type="button">
-                        <span class="btn-text">X</span>
+                        <span class="btn-text">▬</span>
                     </button>
                     </p>
                 </li> 
@@ -56,7 +56,7 @@
         <!-- Title bar on window -->
 
         <!-- Navigation menu items -->
-        <div id="FE-top-nav" style="background: var(--FE-BG); color: black; margin-bottom: 10px;" >
+        <div id="FE-top-nav" style="background: var(--FE-BG); color: black;" >
             <ul>
                 <li><span class="FE-SubNavText">F</span>ile</li>
                 <li><span class="FE-SubNavText">E</span>dit</li>
@@ -70,10 +70,48 @@
             <div id="left">
 
                 <div id="FE-top-nav" style="background: var(--FE-BG); color: black;">
-                    <ul style="color: black; background-color: wheat;">
-                        <li><a><img id="FE-Icon" src="Images/Icons/My Computer.png"/></a></li>
-                        <li><p class="FE-DropDownText"> My Computer </p></li>
+                    <ul id="FE-DropDownBox">
+                        <li><img id="FE-Icon" src="Images/Icons/My Computer.png"/></li>
+                        <li><p id="FE-DropDownText"> My Computer </p></li>
+                        <li  class="right"><img src="Images/Icons/DropDown.png"/></li>
                     </ul>
+                </div>
+                <div id="FE-top-nav" style="background: var(--FE-BG); color: black;">
+                    <ul id="FE-SubTitle">
+                        <li>My Years</li>
+                    </ul>
+                </div>
+                
+                <div id="FE-FolderSelector">
+                    
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    <div>Abcde</div>
+                    
+                
+                </div>
+
+
+
+                <div id="FE-Footer" style="background: var(--FE-BG); color: black;">
+                    <ul id="FE-SubTitle">
+                        <li>Put some JS here to determine "objects"</li>
+                    </ul>
+                </div>
             </div>
             
             <div id="right"></div>
