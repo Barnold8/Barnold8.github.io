@@ -31,9 +31,26 @@ function displayPath(){
 
 function generateTitles(){
     var myPathObjects = {
-        " Sep 2017 - Jun 2018" :"",
-        " - Year 2 - Huh": "Grade: Distinction\n\noverallGrade: Distinction overall\n\nThis was the IT support orientated course. This involved handling a basic LAN network within the classroom, wiring power plugs and ethernet cables. We also resolved hardware issues within computers. Not to mention we were taught the standard practices of an IT support person, logging problems within spreadsheets to a superb standard and handling the said problem accordingly. This course also included installing operating systems on machines and installing software correctly and safely as well as handling admin tasks from the Windows server PC within the classroom adding accounts to the network and their respective login credentials.",
-        " - Year 3 - What": "Grade: Distinction*,Distinction* ,Distinction*Grade: Distinction*,Distinction* ,Distinction*In this course I received the highest grades possible over the two year span. This course was structured around software development and games as a whole. We wrote GUI applications (I chose Python and it's Tkinter library for this), wrote the front end of a website for a client to their specifications and requirements, planned tasks using GANTT charts and set deadlines accordingly, configured networks on a software level using CISCO packet tracer, learned about networks(topolgies, OSI layer, checksum,DTE & DCE,), subnetworks (i.e sub-networks that are determined by their number for their group), network security (i.e DDOS, MITM), OOP paradigms (Polymorphism,encapsulation,inheritance) Skills: Python (Programming Language)"
+        " Sep 2017 - Jun 2018" :`Nottingham College - BTEC IT
+        ----------------------------------------------
+
+        Grade: Pass - Highest possible grade
+        ----------------------------------------------
+        
+        This was my level 1 IT course at Nottingham College. It focused on basic information technology topics like how to use Office software (including a basic database in Access) and writing basic HTML+CSS.
+        
+        Skills:
+        Basic IT knowledge, Office essentials, Office 365
+        `,
+
+
+
+        " Sep 2018 - Jun 2019":`
+        
+
+        `,
+        " Sep 2019 - Jul 2021": "",
+        " Sep 2021 - Jun 2024": ""
         
         };
     const TITLE_ID = "FE-FolderSelector"
