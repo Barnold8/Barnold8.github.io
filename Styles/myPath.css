@@ -19,6 +19,11 @@
     font-style: normal;
 }
 
+.FE-Contents {
+
+    margin: 10px;
+}
+
 #container {
   display: flex;
   flex-direction: column;
@@ -110,7 +115,7 @@
     margin: auto;
 }
 
-#FE-SubTitle{
+#FE-SubTitle-Top{
 
     width:99%;
     border-top: var(--FE-BarMargin) solid var(--FE-Shadow);
@@ -120,9 +125,36 @@
   
 }
 
-#FE-SubTitle > li{
+#FE-SubTitle-Top > li{
 
     margin: 7px;
+
+}
+
+#FE-SubTitle{
+
+    width:99%;
+    border-top: var(--FE-BarMargin) solid var(--FE-Shadow);
+    border-left: var(--FE-BarMargin) solid var(--FE-Shadow);
+    border-bottom: var(--FE-BarMargin) solid var(--FE-Highlight);
+    border-right: var(--FE-BarMargin) solid var(--FE-Highlight);
+  
+    display: flex;         /* makes li items sit side by side */
+    list-style: none;      /* optional: remove bullets */
+    padding: 0;            /* optional: remove padding */
+    margin: 0;             /* optional: remove margin */
+    gap: 1rem;             /* space between items */
+
+}
+
+#FE-SubTitle > li{
+
+    /* Reminder: the My years section is affected by this so make the IDS different or smth */
+    flex: 1;  
+       
+    text-align: center;
+    border-right: var(--FE-BarMargin) solid var(--FE-Shadow);
+    white-space: nowrap;  
 }
 
 #FE-FolderSelector{
