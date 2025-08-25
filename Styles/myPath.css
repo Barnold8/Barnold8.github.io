@@ -139,6 +139,18 @@
 
 }
 
+#FE-Contents{
+    width:98%;
+    overflow-y:auto;
+    height: 14rem;
+    background-color: white;
+    margin: 3px;
+    border-top: var(--FE-BarMargin) solid var(--FE-Shadow);
+    border-left: var(--FE-BarMargin) solid var(--FE-Shadow);
+    border-bottom: var(--FE-BarMargin) solid var(--FE-Highlight);
+    border-right: var(--FE-BarMargin) solid var(--FE-Highlight);
+}
+
 #FE-Splitter{
 
     width: 99%;
