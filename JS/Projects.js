@@ -7,7 +7,7 @@ function httpGet(theUrl) // cheers https://stackoverflow.com/questions/247483/ht
 }
 
 function gatherRepos(userName){
-    return JSON.parse(httpGet("https://api.github.com/users/barnold8/repos"))
+    return JSON.parse(httpGet("https://api.github.com/users/barnold8/repos?per_page=100&page=1&sort=updated"))
 }
 
 
