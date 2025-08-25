@@ -32,7 +32,12 @@ function createCard(repo){
     divCard.classList.add("card")
 
     title = createTitle("Project name: " + repo["name"]+"\n\n")
-    contents = createContents("About: " + repo["description"])
+    if( repo["description"] == null ||  repo["description"] == undefined  ||  repo["description"].length == 0){
+        contents = createContents("About: " + "No description has been written for this yet.")
+    }else{
+        contents = createContents("About: " + repo["description"])
+    }
+    
 
     divCard.appendChild(title)
     divCard.appendChild(contents)
@@ -53,6 +58,8 @@ function createTitle(titleText){
 }
 
 function createContents(contentText){
+
+
 
     const strong = document.createElement("strong")
     const content = document.createElement("p")
