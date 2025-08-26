@@ -23,10 +23,12 @@ function generateCustomDiv(_ID="",_classlist=[],_contents="",_customAttributeNam
     return newDiv
 }
 
-function displayPath(){
+function revealBackground() {
+    document.getElementById("bgImage").classList.add("show");
+}
 
-    
-
+function hideBackground() {
+    document.getElementById("bgImage").classList.remove("show");
 }
 
 function generateTitles(){

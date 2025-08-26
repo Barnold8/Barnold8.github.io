@@ -222,6 +222,22 @@
 
 }
 
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../Images/winxpBG.jpg') center/cover no-repeat;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* fade effect */
+    z-index: -1; /* stays behind content */
+}
+
+.background-image.show {
+    opacity: 1;
+}
+
 #left {
     width: 49%;
     margin-left: 1%;

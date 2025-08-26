@@ -10,7 +10,6 @@ function gatherRepos(userName){
     return JSON.parse(httpGet("https://api.github.com/users/barnold8/repos?per_page=100&page=1&sort=updated"))
 }
 
-
 function reposToCards(repos){
 
     cards = []
@@ -58,9 +57,6 @@ function createTitle(titleText){
 }
 
 function createContents(contentText){
-
-
-
     const strong = document.createElement("strong")
     const content = document.createElement("p")
     strong.innerText = contentText
@@ -69,6 +65,7 @@ function createContents(contentText){
 
     return content
 }
+
 
 
 gridContainer = document.getElementsByClassName("grid-container")[0]
